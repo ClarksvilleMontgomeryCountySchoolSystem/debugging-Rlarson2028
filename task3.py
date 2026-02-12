@@ -32,7 +32,7 @@ def program_3():
     # Example: 25 Celsius = 77.0 Fahrenheit
     print("Temperature Converter")
     celsius = input("Enter temperature in Celsius: ")
-    fahrenheit = celsius * 9/5 + 32
+    fahrenheit = int(celsius) * 9/5 + 32
     print(f"{celsius} Celsius = {fahrenheit} Fahrenheit")
 
 
@@ -42,7 +42,7 @@ def program_4():
     print("Paycheck Calculator")
     hours = input("Hours worked: ")
     rate = input("Hourly rate: ")
-    pay = hours * rate
+    pay = hours * int(rate)
     print(f"Hours: {hours}")
     print(f"Rate: ${rate}/hour")
     print(f"Total pay: ${pay}")
@@ -66,7 +66,7 @@ def program_6():
     print("Tip Calculator")
     bill = input("Enter bill amount: ")
     tip_percent = input("Enter tip percentage: ")
-    tip_amount = float(bill) * tip_percent / 100
+    tip_amount = float(bill) * float(tip_percent) / 100
     total = float(bill) + tip_amount
     print(f"Bill: ${bill}")
     print(f"Tip ({tip_percent}%): ${tip_amount}")
